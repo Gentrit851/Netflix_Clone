@@ -7,10 +7,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainTabViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tabBar.tintColor = .label
         // Do any additional setup after loading the view.
     }
 
