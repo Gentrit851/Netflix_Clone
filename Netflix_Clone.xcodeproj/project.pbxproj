@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A2F244702B8F4001000DF3D4 /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F2446F2B8F4001000DF3D4 /* CollectionViewTableViewCell.swift */; };
+		A2F244722B8F4204000DF3D4 /* HeroHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F244712B8F4204000DF3D4 /* HeroHeaderUIView.swift */; };
 		FE49C7722B8D03A7007DF19F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE49C7712B8D03A7007DF19F /* AppDelegate.swift */; };
 		FE49C7742B8D03A7007DF19F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE49C7732B8D03A7007DF19F /* SceneDelegate.swift */; };
 		FE49C7762B8D03A7007DF19F /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE49C7752B8D03A7007DF19F /* MainTabViewController.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		A2F2446F2B8F4001000DF3D4 /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
+		A2F244712B8F4204000DF3D4 /* HeroHeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroHeaderUIView.swift; sourceTree = "<group>"; };
 		FE49C76E2B8D03A7007DF19F /* Netflix_Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Netflix_Clone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE49C7712B8D03A7007DF19F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE49C7732B8D03A7007DF19F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				A2F2446F2B8F4001000DF3D4 /* CollectionViewTableViewCell.swift */,
+				A2F244712B8F4204000DF3D4 /* HeroHeaderUIView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE49C78C2B8D0D55007DF19F /* UpcomingViewController.swift in Sources */,
+				A2F244722B8F4204000DF3D4 /* HeroHeaderUIView.swift in Sources */,
 				FE49C78E2B8D0D65007DF19F /* SearchViewController.swift in Sources */,
 				FE49C78A2B8D0D3E007DF19F /* HomeViewController.swift in Sources */,
 				FE49C77C2B8D03A7007DF19F /* Netflix_Clone.xcdatamodeld in Sources */,
