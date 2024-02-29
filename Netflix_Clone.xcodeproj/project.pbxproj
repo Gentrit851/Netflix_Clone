@@ -29,6 +29,7 @@
 		FE49C78C2B8D0D55007DF19F /* UpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE49C78B2B8D0D55007DF19F /* UpcomingViewController.swift */; };
 		FE49C78E2B8D0D65007DF19F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE49C78D2B8D0D65007DF19F /* SearchViewController.swift */; };
 		FE49C7902B8D0D74007DF19F /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE49C78F2B8D0D74007DF19F /* DownloadViewController.swift */; };
+		FE54CE862B900B270078C2C4 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE54CE852B900B270078C2C4 /* SearchResultsViewController.swift */; };
 		FEABAB782B8FEE3B004CE5E2 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEABAB772B8FEE3B004CE5E2 /* TitleTableViewCell.swift */; };
 		FEABAB7B2B8FF299004CE5E2 /* TitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEABAB7A2B8FF298004CE5E2 /* TitleViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -56,6 +57,7 @@
 		FE49C78B2B8D0D55007DF19F /* UpcomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewController.swift; sourceTree = "<group>"; };
 		FE49C78D2B8D0D65007DF19F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		FE49C78F2B8D0D74007DF19F /* DownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadViewController.swift; sourceTree = "<group>"; };
+		FE54CE852B900B270078C2C4 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 		FEABAB772B8FEE3B004CE5E2 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
 		FEABAB7A2B8FF298004CE5E2 /* TitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,7 +146,6 @@
 				FE49C7882B8D0D22007DF19F /* Controllers */,
 				FE49C7712B8D03A7007DF19F /* AppDelegate.swift */,
 				FE49C7732B8D03A7007DF19F /* SceneDelegate.swift */,
-				FE49C7752B8D03A7007DF19F /* MainTabViewController.swift */,
 				FE49C7772B8D03A7007DF19F /* Main.storyboard */,
 				FE49C77D2B8D03AA007DF19F /* Assets.xcassets */,
 				FE49C77F2B8D03AA007DF19F /* LaunchScreen.storyboard */,
@@ -157,13 +158,30 @@
 		FE49C7882B8D0D22007DF19F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				A28878672B901270000F2837 /* General */,
-				FE49C7892B8D0D3E007DF19F /* HomeViewController.swift */,
-				FE49C78B2B8D0D55007DF19F /* UpcomingViewController.swift */,
-				FE49C78D2B8D0D65007DF19F /* SearchViewController.swift */,
-				FE49C78F2B8D0D74007DF19F /* DownloadViewController.swift */,
+				FE54CE882B900BF00078C2C4 /* General */,
+				FE54CE872B900B970078C2C4 /* Core */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FE54CE872B900B970078C2C4 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FE49C78B2B8D0D55007DF19F /* UpcomingViewController.swift */,
+				FE49C7752B8D03A7007DF19F /* MainTabViewController.swift */,
+				FE49C78D2B8D0D65007DF19F /* SearchViewController.swift */,
+				FE49C78F2B8D0D74007DF19F /* DownloadViewController.swift */,
+				FE49C7892B8D0D3E007DF19F /* HomeViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		FE54CE882B900BF00078C2C4 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				FE54CE852B900B270078C2C4 /* SearchResultsViewController.swift */,
+			);
+			path = General;
 			sourceTree = "<group>";
 		};
 		FEABAB792B8FF25C004CE5E2 /* ViewModels */ = {
@@ -254,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE49C78C2B8D0D55007DF19F /* UpcomingViewController.swift in Sources */,
+				FE54CE862B900B270078C2C4 /* SearchResultsViewController.swift in Sources */,
 				A2F244722B8F4204000DF3D4 /* HeroHeaderUIView.swift in Sources */,
 				FE49C78E2B8D0D65007DF19F /* SearchViewController.swift in Sources */,
 				FE49C78A2B8D0D3E007DF19F /* HomeViewController.swift in Sources */,
