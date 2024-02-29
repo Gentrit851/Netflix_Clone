@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home-->
+        <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Netflix_Clone" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,13 +18,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" selectedImage="house.fill" id="r4G-Gb-Ai0"/>
+                    <navigationItem key="navigationItem" id="Nwe-44-x4x"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1415" y="724"/>
+            <point key="canvasLocation" x="-486.15384615384613" y="723.69668246445497"/>
         </scene>
-        <!--Coming Soon-->
+        <!--Upcoming View Controller-->
         <scene sceneID="vax-Xy-ETc">
             <objects>
                 <viewController id="5jh-hD-cwq" customClass="UpcomingViewController" customModule="Netflix_Clone" customModuleProvider="target" sceneMemberID="viewController">
@@ -34,13 +34,13 @@
                         <viewLayoutGuide key="safeArea" id="pgT-lW-XoB"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Coming Soon" image="play.circle" catalog="system" selectedImage="play.circle.fill" id="Rl2-bn-w5o"/>
+                    <navigationItem key="navigationItem" id="2Bk-aD-n3M"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z70-Mh-e8Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-692" y="845"/>
+            <point key="canvasLocation" x="1166.1538461538462" y="844.54976303317528"/>
         </scene>
-        <!--Top Searches-->
+        <!--Search View Controller-->
         <scene sceneID="8fJ-Z4-GkT">
             <objects>
                 <viewController id="xcg-us-ZwL" customClass="SearchViewController" customModule="Netflix_Clone" customModuleProvider="target" sceneMemberID="viewController">
@@ -50,13 +50,13 @@
                         <viewLayoutGuide key="safeArea" id="oMc-SR-J5O"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Top Searches" image="magnifyingglass" catalog="system" selectedImage="magnifyingglass.circle.fill" id="26K-lN-a9Y"/>
+                    <navigationItem key="navigationItem" id="X3f-vD-wJr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lgo-Bi-2uD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="462" y="845"/>
+            <point key="canvasLocation" x="3249.2307692307691" y="844.54976303317528"/>
         </scene>
-        <!--Downloads-->
+        <!--Download View Controller-->
         <scene sceneID="OcA-LM-fpg">
             <objects>
                 <viewController id="BvU-LE-3zm" customClass="DownloadViewController" customModule="Netflix_Clone" customModuleProvider="target" sceneMemberID="viewController">
@@ -66,11 +66,11 @@
                         <viewLayoutGuide key="safeArea" id="WiK-ff-HHm"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Downloads" image="arrow.down.to.line" catalog="system" selectedImage="arrow.down.to.line" id="ncK-b2-F1d"/>
+                    <navigationItem key="navigationItem" id="nEp-Mm-XHg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hHZ-o9-wGZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1252" y="724"/>
+            <point key="canvasLocation" x="4967.6923076923076" y="723.69668246445497"/>
         </scene>
         <!--Main Tab View Controller-->
         <scene sceneID="Tjp-J4-le5">
@@ -78,19 +78,96 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="leh-o8-8aZ" customClass="MainTabViewController" customModule="Netflix_Clone" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zAJ-oY-4Ej">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="JeT-tM-xNB"/>
-                        <segue destination="5jh-hD-cwq" kind="relationship" relationship="viewControllers" id="vax-Uf-Aqd"/>
-                        <segue destination="BvU-LE-3zm" kind="relationship" relationship="viewControllers" id="YtN-Cu-C4t"/>
-                        <segue destination="xcg-us-ZwL" kind="relationship" relationship="viewControllers" id="Gcd-ee-lzE"/>
+                        <segue destination="j3h-JI-hkb" kind="relationship" relationship="viewControllers" id="JeT-tM-xNB"/>
+                        <segue destination="RWT-ZA-6wp" kind="relationship" relationship="viewControllers" id="vax-Uf-Aqd"/>
+                        <segue destination="lmV-EK-Dha" kind="relationship" relationship="viewControllers" id="YtN-Cu-C4t"/>
+                        <segue destination="zij-lH-sXs" kind="relationship" relationship="viewControllers" id="Gcd-ee-lzE"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7QN-5R-ZfC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-91" y="-16"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="kjF-jJ-JRp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j3h-JI-hkb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" selectedImage="house.fill" id="r4G-Gb-Ai0"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NtN-uo-yrY">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="l0c-od-O2r"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UOO-G3-hSb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1415.3846153846152" y="723.69668246445497"/>
+        </scene>
+        <!--Coming Soon-->
+        <scene sceneID="QBz-ku-oXc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RWT-ZA-6wp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Coming Soon" image="play.circle" catalog="system" selectedImage="play.circle.fill" id="Rl2-bn-w5o"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IMm-gk-gU8">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5jh-hD-cwq" kind="relationship" relationship="rootViewController" id="Cex-Cj-ika"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Yg-2u-SQF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="236.92307692307691" y="844.54976303317528"/>
+        </scene>
+        <!--Top Searches-->
+        <scene sceneID="K2C-Y0-zBn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zij-lH-sXs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Top Searches" image="magnifyingglass" catalog="system" selectedImage="magnifyingglass.circle.fill" id="26K-lN-a9Y"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jj4-xc-PZ4">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xcg-us-ZwL" kind="relationship" relationship="rootViewController" id="waI-lj-Bo8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s61-6S-VfC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2320" y="844.54976303317528"/>
+        </scene>
+        <!--Downloads-->
+        <scene sceneID="fHC-r3-qNj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lmV-EK-Dha" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Downloads" image="arrow.down.to.line" catalog="system" selectedImage="arrow.down.to.line" id="ncK-b2-F1d"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qYt-da-hGW">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BvU-LE-3zm" kind="relationship" relationship="rootViewController" id="fqu-uO-hx6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gfz-2f-vmS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4038.4615384615381" y="723.69668246445497"/>
         </scene>
     </scenes>
     <resources>
