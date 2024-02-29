@@ -30,6 +30,7 @@
 		FE49C78E2B8D0D65007DF19F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE49C78D2B8D0D65007DF19F /* SearchViewController.swift */; };
 		FE49C7902B8D0D74007DF19F /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE49C78F2B8D0D74007DF19F /* DownloadViewController.swift */; };
 		FE54CE862B900B270078C2C4 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE54CE852B900B270078C2C4 /* SearchResultsViewController.swift */; };
+		FE917A5A2B90B2E20011157C /* DataPersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE917A592B90B2E20011157C /* DataPersistenceManager.swift */; };
 		FEABAB782B8FEE3B004CE5E2 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEABAB772B8FEE3B004CE5E2 /* TitleTableViewCell.swift */; };
 		FEABAB7B2B8FF299004CE5E2 /* TitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEABAB7A2B8FF298004CE5E2 /* TitleViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -58,6 +59,7 @@
 		FE49C78D2B8D0D65007DF19F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		FE49C78F2B8D0D74007DF19F /* DownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadViewController.swift; sourceTree = "<group>"; };
 		FE54CE852B900B270078C2C4 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
+		FE917A592B90B2E20011157C /* DataPersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPersistenceManager.swift; sourceTree = "<group>"; };
 		FEABAB772B8FEE3B004CE5E2 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
 		FEABAB7A2B8FF298004CE5E2 /* TitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				A24E06762B8F66A100EA9F0B /* APICaller.swift */,
+				FE917A592B90B2E20011157C /* DataPersistenceManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				FE49C78C2B8D0D55007DF19F /* UpcomingViewController.swift in Sources */,
 				FE54CE862B900B270078C2C4 /* SearchResultsViewController.swift in Sources */,
 				A2F244722B8F4204000DF3D4 /* HeroHeaderUIView.swift in Sources */,
+				FE917A5A2B90B2E20011157C /* DataPersistenceManager.swift in Sources */,
 				FE49C78E2B8D0D65007DF19F /* SearchViewController.swift in Sources */,
 				FE49C78A2B8D0D3E007DF19F /* HomeViewController.swift in Sources */,
 				FE49C77C2B8D03A7007DF19F /* Netflix_Clone.xcdatamodeld in Sources */,
