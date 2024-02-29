@@ -12,8 +12,10 @@ import CoreData
 
 class DataPersistenceManager {
     
-    enum DatabseError: Error {
+    enum DatabaseError: Error {
         case failedtoSaveData
+        case failedtoFetchData
+        case failedToDeleteData
     }
     
     static let shared = DataPersistenceManager()
@@ -43,7 +45,49 @@ class DataPersistenceManager {
             try context.save()
             completion(.success(()))
         } catch {
-            completion(.failure(DatabseError.failedtoSaveData))
+            completion(.failure(DatabaseError.failedtoSaveData))
         }
     }
+    
+    
+    
+    func fetchingTitleFromDataBase(completion: @escaping (Result<[TitleItem], Error>) -> Void) {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        
+        
+        let context = appDelegate.persistentContainer.viewContext
+        
+        let request: NSFetchRequest<TitleItem>
+        
+        request = TitleItem.fetchRequest()
+        
+        do {
+            let titles = try context.fetch(request)
+            completion(.success(titles))
+            
+        } catch {
+                completion(.failure(DatabaseError.failedtoFetchData))
+        }
+        
+    }
+    
+    func deleteTitleWith(model : TitleItem, completion: @escaping (Result<Void,Error>) -> Void) {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        
+        
+        let context = appDelegate.persistentContainer.viewContext
+        context.delete(model)
+        
+        do {
+            try context.save()
+            completion(.success(()))
+        } catch {
+                completion(.failure(DatabaseError.failedToDeleteData)
+                )
+            }
+        }
 }
